@@ -1,0 +1,109 @@
+.background-home-desktop {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/home/background-home-desktop.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.background-home-mobile {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/home/background-home-mobile.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.home-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.home-content-text {
+  width: 35%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.home-content-text-1 {
+  font-size: 28px;
+  color: white;
+  opacity: 0.8;
+}
+.home-content-text-2 {
+  font-size: 150px;
+  color: white;
+  opacity: 0.8;
+}
+.home-content-text-3 {
+  font-size: 18px;
+  color: white;
+  opacity: 0.8;
+  line-height: 2;
+}
+.home-content-btn {
+  width: 274px;
+  height: 274px;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.35s;
+}
+.home-content-btn:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 1000px) {
+  .home-content-text-1 {
+    font-size: 20px;
+  }
+  .home-content-text-2 {
+    font-size: 80px;
+  }
+  .home-content-text-3 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .home-content-btn {
+    width: 150px;
+    height: 150px;
+    font-size: 22px;
+  }
+  .home-content-text-2 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .home-content {
+    flex-direction: column;
+    height: 60%;
+    gap: 125px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .home-content-text {
+    width: 85%;
+    align-items: center;
+    text-align: center;
+  }
+  .home-content-btn {
+    min-height: 150px;
+    max-height: 150px;
+  }
+}
